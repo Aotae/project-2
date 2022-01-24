@@ -56,7 +56,7 @@ def forbidden(e):
     return send_from_directory('pages'+os.sep, '403.html'), 403
 @my_app.errorhandler(404)
 def not_found(e):
-    return send_from_directory('pages'+os.sep, '404.html'), 403
+    return send_from_directory('pages'+os.sep, '404.html'), 404
 
 
 if __name__ == "__main__":
