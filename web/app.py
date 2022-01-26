@@ -47,7 +47,6 @@ def file_check(path):
     file_exists = full
     if file_exists:
         #log.info("we got here")
-        dir = os.path.dirname(full)
         return send_from_directory('pages'+os.sep, path), 200
     return abort(404)
 
